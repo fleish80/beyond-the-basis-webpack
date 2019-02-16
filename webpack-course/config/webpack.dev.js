@@ -30,7 +30,18 @@ module.exports = {
             , {
                 test: /\.html$/,
                 use: [
-
+                    {
+                        loader: "file-loader",
+                        options: {
+                            name: "[name].html"
+                        }
+                    },
+                    {
+                        loader: "extract-loader",
+                    },
+                    {
+                        loader: "html-loader"
+                    }
                 ]
             }
         ],
