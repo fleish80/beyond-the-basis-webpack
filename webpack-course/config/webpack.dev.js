@@ -15,11 +15,9 @@ module.exports = {
     devServer: {
         contentBase: "dist",
         overlay: true,
-        hot: true,
-        stats: {
-            color: true
-        }
+        hot: true
     },
+    devtool: "source-map",
     module: {
         rules: [
             {
