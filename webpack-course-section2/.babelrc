@@ -1,0 +1,12 @@
+{
+    // "plugins" : ["transform-es2015-arrow-functions", "async-to-promises"],
+    "presets": [
+        ["@babel/preset-env", {
+            "targets": "> 0.25%, not dead",
+            "debug": false
+        }]
+    ],
+    "plugins": [
+        "@babel/plugin-transform-runtime"
+      ]
+}
